@@ -2,7 +2,7 @@
   "name": "waawmessenger",
   "version": "1.0.0",
   "description": "A social chat web app",
-  "main": "server.js",
+  "main": "node server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
