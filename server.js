@@ -16,7 +16,7 @@ const { connected } = require('process');
 const port = process.env.PORT || 8000;
 
 //Database Connection
-mongoose.connect('mongodb://localhost/waawchat1')
+mongoose.connect('mongodb+srv://Ogheneruno:Fresco495@runo.pdvi8.mongodb.net/waawchat1')
  .then(connected => console.log('Database connected successfully'))
  .catch(err => console.log('Error connecting to Database'));
 
@@ -34,7 +34,7 @@ app.use(session({
     resave: true,
     cookie: {maxAge: Date.now() + 3600 * 12 * 60 * 60},
     store: MongoStore.create({
-        mongoUrl:'mongodb://localhost/waawchat1',
+        mongoUrl:'mongodb+srv://Ogheneruno:Fresco495@runo.pdvi8.mongodb.net/waawchat1',
         ttl: 3600 * 12 * 60 * 60
     })
 }));
