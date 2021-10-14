@@ -58,7 +58,7 @@ module.exports = {
     logout: (req, res) => {
         req.logOut();
         req.flash('success-message', 'User logged out');
-        res.redirect('/');
+        res.redirect('/auth/login');
     },
 
     forgotPassword: async (req, res) => {
